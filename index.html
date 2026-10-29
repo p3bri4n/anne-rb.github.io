@@ -1,0 +1,912 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Anne RB graphisme</title>
+<meta name="description" content="Anne RB, graphiste freelance et éducatrice de jeunes enfants à Fouesnant (Finistère) : identités visuelles pour associations et indépendants, papeterie de mariage et de baptême, accompagnement parental en visio.">
+<meta property="og:title" content="Anne RB graphisme">
+<meta property="og:description" content="Graphiste freelance et éducatrice de jeunes enfants : identités visuelles, papeterie de mariage et de baptême, accompagnement parental.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#fcfbf9;
+  --ink:#2d3546;
+  --muted:#5b6578;
+  --slate:#617593;
+  --slate-deep:#4b5d78;
+  --dot:#d0679a;
+  --sky:#a9cbe0;
+  --sky-soft:#e6f0f6;
+  --rose:#f2c4c6;
+  --rose-soft:#fbecec;
+  --rose-ink:#a8456f;
+  --lilac:#cfa6cc;
+  --lilac-soft:#f4eaf3;
+  --line:#e3e1dc;
+  --radius:18px;
+  --wrap:1120px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.65 "Nunito Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--dot);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:"Josefin Sans",sans-serif;font-weight:300;line-height:1.1;margin:0;letter-spacing:.01em}
+h2{font-size:clamp(2rem,4.2vw,3rem)}
+h3{font-size:1.45rem;font-weight:400}
+p{margin:0 0 1em}
+.lead{font-size:1.15rem;color:var(--muted);max-width:60ch}
+
+/* ---------- the signature: the tilted slate label ---------- */
+.label{display:inline-block;background:var(--slate);color:#fff;transform:rotate(-4deg);padding:.35em .8em .25em;font-family:"Josefin Sans",sans-serif;font-weight:300;position:relative}
+.label small{display:block;white-space:nowrap;font-size:.42em;letter-spacing:.55em;text-align:center;margin-top:.1em;padding-left:.5em}
+.label small::before,.label small::after{content:"";display:inline-block;width:.45em;height:.45em;border-radius:50%;background:var(--dot);vertical-align:middle;margin:0 .9em}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;gap:.5em;font:700 1rem/1 "Nunito Sans",sans-serif;text-decoration:none;padding:.95em 1.5em;border-radius:999px;border:2px solid transparent;cursor:pointer;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--slate-deep);color:#fff}
+.btn-primary:hover{background:var(--ink)}
+.btn-rose{background:var(--rose-ink);color:#fff}
+.btn-rose:hover{background:#8c3559}
+.btn-ghost{border-color:currentColor;color:var(--slate-deep);background:transparent}
+.btn small{font-weight:600;opacity:.8}
+
+/* ---------- nav ---------- */
+.nav{position:sticky;top:0;z-index:20;background:rgba(252,251,249,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:28px;height:64px}
+.brand{text-decoration:none;font-size:22px}
+.brand .label{transform:rotate(-3deg);font-size:20px;padding:.25em .6em .15em}
+.nav ul{display:flex;gap:22px;list-style:none;margin:0 0 0 auto;padding:0}
+.nav ul a{text-decoration:none;font-weight:600;font-size:.95rem;color:var(--muted)}
+.nav ul a:hover{color:var(--ink)}
+.nav .btn{padding:.7em 1.1em;font-size:.9rem}
+.menu-toggle{display:none;margin-left:auto;background:none;border:0;font:inherit;font-weight:700;color:var(--ink);padding:8px;cursor:pointer}
+@media (max-width:900px){
+  .nav ul{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;background:var(--paper);border-bottom:1px solid var(--line);padding:8px 24px 16px}
+  .nav ul a{display:block;padding:12px 0;font-size:1.05rem}
+  .nav.open ul{display:flex}
+  .menu-toggle{display:block}
+  .nav .btn{display:none}
+}
+
+/* ---------- hero ---------- */
+.hero{padding:72px 0 88px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero-title{font-size:clamp(2.2rem,5.4vw,4.2rem);margin:0 0 34px}
+.hero-title .label{padding:.28em .55em .18em}
+.hero h1{font-size:clamp(1.6rem,2.6vw,2.1rem);font-weight:300;margin-bottom:18px;max-width:22ch}
+.hero .lead{margin-bottom:30px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+.hero-art{position:relative}
+.hero-art img{width:100%;max-width:560px;margin-left:auto;mix-blend-mode:multiply}
+.hero-art .stamp{position:absolute;left:-8px;top:6%;background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 16px;font-size:.92rem;line-height:1.4;box-shadow:0 10px 30px -18px rgba(45,53,70,.5);transform:rotate(2deg)}
+.hero-art .stamp b{display:block;font-family:"Josefin Sans",sans-serif;font-weight:400;font-size:1.1rem}
+@media (max-width:860px){
+  .hero{padding:40px 0 56px}
+  .hero .wrap{grid-template-columns:1fr;gap:28px}
+  .hero-art{order:-1}
+  .hero-art img{max-width:190px;margin:0 auto}
+  .hero-art .stamp{display:none}
+}
+
+/* ---------- three worlds ---------- */
+.worlds{padding:0 0 96px}
+.worlds-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.world{position:relative;display:flex;flex-direction:column;padding:34px 30px 30px;text-decoration:none;border-radius:var(--radius);min-height:280px;overflow:hidden;transition:transform .2s}
+.world:hover{transform:translateY(-3px)}
+.world::before{content:"";position:absolute;width:210px;height:190px;right:-50px;top:-60px;background:var(--blob);opacity:.55;border-radius:58% 42% 63% 37% / 48% 55% 45% 52%}
+.world h3{font-size:1.9rem;font-weight:300;margin-bottom:6px;position:relative}
+.world .for{font-weight:700;font-size:.9rem;color:var(--accent);margin-bottom:14px;position:relative}
+.world p{color:var(--muted);position:relative}
+.world .go{margin-top:auto;font-weight:700;color:var(--accent);position:relative;text-decoration:underline;text-underline-offset:4px}
+.w-pro{background:var(--sky-soft);--blob:var(--sky);--accent:var(--slate-deep)}
+.w-perso{background:var(--lilac-soft);--blob:var(--lilac);--accent:#82507e}
+.w-poz{background:var(--rose-soft);--blob:var(--rose);--accent:var(--rose-ink)}
+@media (max-width:860px){.worlds-grid{grid-template-columns:1fr}.world{min-height:0}}
+
+/* ---------- section scaffolding ---------- */
+.section{padding:96px 0}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:32px;flex-wrap:wrap;margin-bottom:44px}
+.section-head .lead{margin:14px 0 0}
+.tint-sky{background:var(--sky-soft)}
+.tint-rose{background:var(--rose-soft)}
+.tint-lilac{background:var(--lilac-soft)}
+@media (max-width:700px){.section{padding:64px 0}}
+
+/* ---------- café pop steps (a real sequence) ---------- */
+.cafe{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:start;background:#fff;border-radius:var(--radius);padding:40px;margin-bottom:64px}
+.cafe h3{font-size:2rem;font-weight:300;margin-bottom:10px}
+.cafe .free{display:inline-block;background:var(--sky);color:var(--ink);font-weight:700;border-radius:999px;padding:.25em .8em;font-size:.9rem;margin-bottom:16px}
+.steps{list-style:none;margin:0;padding:0;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:44px 1fr;gap:14px;padding:14px 0;border-top:1px solid var(--line)}
+.steps li:first-child{border-top:0;padding-top:0}
+.steps li::before{content:counter(s);font-family:"Josefin Sans",sans-serif;font-size:1.7rem;font-weight:300;color:var(--slate);line-height:1.2}
+.steps b{display:block}
+.steps span{color:var(--muted)}
+@media (max-width:800px){.cafe{grid-template-columns:1fr;padding:28px 22px;gap:24px}}
+
+/* ---------- offers ---------- */
+.offers-top{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;margin-bottom:22px}
+.offers-top h3{font-size:1.8rem;font-weight:300}
+.seg{display:inline-flex;background:#fff;border-radius:999px;padding:5px;border:1px solid var(--line)}
+.seg button{font:700 .92rem "Nunito Sans",sans-serif;border:0;background:none;padding:.6em 1.1em;border-radius:999px;cursor:pointer;color:var(--muted)}
+.seg button[aria-pressed=true]{background:var(--slate-deep);color:#fff}
+.offers{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.offer{background:#fff;border-radius:var(--radius);padding:30px 28px;display:flex;flex-direction:column;border-top:8px solid var(--c)}
+.offer h4{font:300 1.9rem/1 "Josefin Sans",sans-serif;margin:0 0 6px}
+.offer .tag{color:var(--muted);margin-bottom:18px}
+.offer ul{margin:0 0 22px;padding:0;list-style:none}
+.offer li{padding:5px 0 5px 22px;position:relative}
+.offer li::before{content:"";position:absolute;left:0;top:.85em;width:9px;height:9px;border-radius:50%;background:var(--c)}
+.price{margin-top:auto;font-family:"Josefin Sans",sans-serif;font-size:2.6rem;font-weight:400;line-height:1}
+.price small{display:block;font:600 .85rem "Nunito Sans",sans-serif;color:var(--muted);margin-bottom:4px}
+.o-rezo{--c:#e77fbf}.o-com{--c:#f2be5e}.o-full{--c:#6cc9b7}
+.extra{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:20px}
+.extra div{border:1.5px dashed #b9c9d8;border-radius:var(--radius);padding:22px 26px}
+.extra b{font-family:"Josefin Sans",sans-serif;font-weight:400;font-size:1.3rem;display:block;margin-bottom:4px}
+.extra p{color:var(--muted);margin:0 0 8px;font-size:.95rem}
+.extra .from{font-weight:700;color:var(--slate-deep)}
+.note{color:var(--muted);font-size:.95rem;margin-top:18px}
+@media (max-width:900px){.offers,.extra{grid-template-columns:1fr}}
+
+/* ---------- gallery ---------- */
+.filters{display:flex;flex-wrap:wrap;gap:8px}
+.filters button{font:700 .92rem "Nunito Sans",sans-serif;padding:.6em 1.1em;border-radius:999px;border:1.5px solid var(--line);background:#fff;color:var(--muted);cursor:pointer}
+.filters button[aria-pressed=true]{border-color:var(--ink);background:var(--ink);color:#fff}
+.grid{columns:4 150px;column-gap:18px}
+@media (max-width:600px){.grid{column-gap:12px}.tile{margin-bottom:14px}.tile figcaption{font-size:.82rem;line-height:1.35}}
+.tile{break-inside:avoid;margin:0 0 18px;cursor:zoom-in;background:none;border:0;padding:0;width:100%;text-align:left;font:inherit;color:inherit;display:block}
+.tile img{width:100%;height:auto;border-radius:12px;background:#eee}
+.tile figcaption{font-size:.9rem;color:var(--muted);padding:8px 2px 0}
+.tile[hidden]{display:none}
+.count{font-size:.9rem;color:var(--muted);margin:-24px 0 26px}
+dialog.lightbox{border:0;padding:0;background:transparent;max-width:min(92vw,900px);max-height:92vh}
+dialog.lightbox::backdrop{background:rgba(29,34,45,.86)}
+dialog.lightbox img{max-height:82vh;width:auto;margin:0 auto;border-radius:10px}
+dialog.lightbox p{color:#fff;text-align:center;margin:12px 0 0}
+dialog.lightbox button{position:fixed;top:16px;right:20px;background:#fff;border:0;border-radius:999px;padding:.6em 1em;font:700 .9rem "Nunito Sans",sans-serif;cursor:pointer}
+
+/* ---------- perso universes ---------- */
+.perso-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:28px}
+.perso{background:#fff;border-radius:var(--radius);padding:28px}
+.perso h3{margin-bottom:14px}
+.perso dl{margin:0}
+.perso dt{font-weight:700;margin-top:12px}
+.perso dd{margin:2px 0 0;color:var(--muted);font-size:.95rem}
+.perso .heart{width:34px;height:30px;margin-bottom:14px}
+@media (max-width:900px){.perso-grid{grid-template-columns:1fr}}
+
+/* ---------- la poz ---------- */
+.poz{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:start}
+.poz h2{color:var(--rose-ink)}
+.poz .card{background:#fff;border-radius:var(--radius);padding:32px}
+.poz .card .price{color:var(--rose-ink);margin:18px 0 6px}
+.poz .card ul{padding:0;margin:0;list-style:none}
+.poz .card li{padding:8px 0;border-top:1px solid var(--line)}
+.poz .card li:first-child{border-top:0}
+.poz .steps li::before{color:var(--rose-ink)}
+@media (max-width:860px){.poz{grid-template-columns:1fr;gap:28px}}
+
+
+/* ---------- mots doux ---------- */
+.reviews-feature{display:grid;grid-template-columns:1.25fr 1fr;gap:20px;margin-bottom:20px}
+.quote{background:#fff;border-radius:var(--radius);padding:28px 28px 24px;margin:0;display:flex;flex-direction:column}
+.quote blockquote{margin:0 0 18px;font-size:1.02rem}
+.quote.big{background:var(--slate-deep);color:#fff;padding:40px}
+.quote.big blockquote{font:300 clamp(1.35rem,2.2vw,1.75rem)/1.35 "Josefin Sans",sans-serif;margin-bottom:24px}
+.quote figcaption{margin-top:auto;display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-weight:700}
+.quote .kind{font-weight:600;font-size:.82rem;padding:.2em .7em;border-radius:999px;background:var(--k)}
+.quote.big .kind{color:var(--ink)}
+.k-pro{--k:var(--sky)}.k-mariage{--k:var(--lilac)}.k-bapteme{--k:#c8d8ee}.k-perso{--k:#dfe9b8}
+.reviews-side{display:grid;gap:20px}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.all-reviews{margin-top:28px}
+.all-reviews > summary{display:inline-flex;cursor:pointer;list-style:none;font-weight:700;color:var(--slate-deep);border:2px solid currentColor;border-radius:999px;padding:.8em 1.4em}
+.all-reviews > summary::-webkit-details-marker{display:none}
+.all-reviews[open] > summary{margin-bottom:24px}
+.all-list{columns:3 280px;column-gap:20px}
+.all-list .quote{break-inside:avoid;margin-bottom:20px;display:block}
+.all-list .quote blockquote{font-size:.95rem;color:var(--ink)}
+@media (max-width:900px){.reviews-feature,.reviews-grid{grid-template-columns:1fr}.quote.big{padding:30px 24px}}
+
+/* ---------- clients ---------- */
+.clients{display:flex;flex-wrap:wrap;gap:10px}
+.clients details{background:#fff;border:1px solid var(--line);border-radius:999px;padding:0}
+.clients details[open]{border-radius:16px;flex-basis:100%;max-width:420px}
+.clients summary{list-style:none;cursor:pointer;padding:.6em 1.1em;font-weight:600;font-size:.95rem}
+.clients summary::-webkit-details-marker{display:none}
+.clients summary::after{content:"+";margin-left:.5em;color:var(--slate)}
+.clients details[open] summary::after{content:"–"}
+.clients details p{margin:0;padding:0 1.1em 1em;color:var(--muted);font-size:.92rem}
+
+.clients details p a{color:var(--slate-deep);font-weight:600;text-underline-offset:3px}
+/* ---------- faq ---------- */
+.faq{max-width:780px}
+.faq details{border-top:1px solid var(--line)}
+.faq details:last-child{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;list-style:none;padding:20px 40px 20px 0;position:relative;font-weight:700;font-size:1.05rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:6px;top:16px;font:300 1.6rem "Josefin Sans",sans-serif;color:var(--slate)}
+.faq details[open] summary::after{content:"–"}
+.faq details p{color:var(--muted);margin:0 0 20px;max-width:65ch}
+.about .about-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+/* ---------- about ---------- */
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
+.about img{border-radius:var(--radius);width:100%}
+.about .words{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 0;padding:0;list-style:none}
+.about .words li{font-family:"Josefin Sans",sans-serif;font-size:1.15rem;padding:.3em .8em .2em;border-radius:999px;background:var(--c)}
+@media (max-width:860px){.about{grid-template-columns:1fr;gap:28px}.about img{max-width:380px}}
+
+/* ---------- contact ---------- */
+.contact{background:var(--slate-deep);color:#fff;padding:96px 0 40px}
+.contact h2{margin-bottom:16px}
+.contact .lead{color:#dfe6f0}
+.contact-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:56px;margin-top:40px}
+.contact .book{display:flex;flex-direction:column;gap:14px;align-items:flex-start}
+.contact .btn-primary{background:#fff;color:var(--slate-deep)}
+.contact .btn-primary:hover{background:var(--sky-soft)}
+.contact address{font-style:normal;line-height:2}
+.contact address a{color:#fff;text-underline-offset:4px}
+.legal{border-top:1px solid rgba(255,255,255,.2);margin-top:72px;padding-top:24px;font-size:.85rem;color:#c9d3e0;display:flex;flex-wrap:wrap;gap:8px 22px;justify-content:space-between}
+.legal nav{display:flex;flex-wrap:wrap;gap:6px 16px}
+.legal a{color:#c9d3e0}
+@media (max-width:760px){.contact-grid{grid-template-columns:1fr;gap:32px}}
+
+/* ---------- legal documents ---------- */
+dialog.legal-doc{border:0;border-radius:var(--radius);padding:0;width:min(760px,94vw);max-height:88vh;background:var(--paper);color:var(--ink);box-shadow:0 30px 80px -30px rgba(29,34,45,.6)}
+dialog.legal-doc::backdrop{background:rgba(29,34,45,.6)}
+.doc-head{position:sticky;top:0;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 28px;background:var(--paper);border-bottom:1px solid var(--line)}
+.doc-head h2{font-size:1.7rem}
+.doc-close{font:700 .9rem "Nunito Sans",sans-serif;border:1.5px solid var(--line);background:#fff;border-radius:999px;padding:.55em 1em;cursor:pointer;color:var(--ink);flex-shrink:0}
+.doc-body{padding:8px 28px 32px;font-size:.98rem}
+.doc-body h3{font-family:"Nunito Sans",sans-serif;font-weight:700;font-size:1.02rem;margin:22px 0 6px}
+.doc-body ul{margin:0;padding-left:1.2em}
+.doc-body li{margin:3px 0}
+.doc-date{color:var(--muted);font-size:.88rem;margin-top:14px}
+.doc-summary{background:var(--sky-soft);border-radius:14px;padding:4px 22px 18px;margin:16px 0 22px}
+.doc-body .todo{background:#fff4d6;border-left:4px solid #e2b13c;padding:10px 14px;border-radius:6px}
+@media (max-width:600px){.doc-head,.doc-body{padding-left:20px;padding-right:20px}}
+
+.book-row{display:flex;flex-wrap:wrap;gap:10px}
+.cal-slot{grid-column:1/-1;background:#fff;border-radius:14px;overflow:hidden}
+.cal-slot iframe{width:100%;height:700px;border:0;display:block}
+.boards-title{font-size:1.5rem;margin:0 0 16px}
+.boards{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 2px 18px;margin:0 0 48px;list-style:none}
+.boards li{flex:0 0 min(260px,70vw);scroll-snap-align:start}
+.boards button{display:block;width:100%;padding:0;border:0;background:none;cursor:zoom-in;font:inherit;color:inherit;text-align:left}
+.boards img{width:100%;border-radius:12px;box-shadow:0 8px 24px -16px rgba(45,53,70,.45);background:#fff}
+.boards span{display:block;font-size:.9rem;color:var(--muted);padding-top:8px}
+.more-wrap{text-align:center;margin:12px 0 0}
+.more-wrap[hidden]{display:none}
+.map{margin-top:40px;border-radius:var(--radius);overflow:hidden;background:rgba(255,255,255,.08);min-height:320px;display:grid}
+.map iframe{width:100%;height:360px;border:0;display:block}
+.map-ph{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-align:center;padding:32px;color:#dfe6f0}
+.map-ph p{margin:0;max-width:44ch}
+</style>
+</head>
+<body>
+
+<header class="nav" id="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Anne RB graphisme, retour en haut"><span class="label">Anne RB</span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+    <ul id="menu">
+      <li><a href="#pros">Offres pros</a></li>
+      <li><a href="#realisations">Réalisations</a></li>
+      <li><a href="#persos">Créations persos</a></li>
+      <li><a href="#poz">La Poz'</a></li>
+      <li><a href="#avis">Avis</a></li>
+      <li><a href="#anne">Qui suis-je</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn btn-primary" href="https://calendly.com/annerbgraphisme/cafe-pop" target="_blank" rel="noopener">Café POP gratuit</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="hero-title" aria-hidden="true"><span class="label">Anne RB<small>graphisme</small></span></p>
+      <h1>Graphiste freelance et éducatrice de jeunes enfants. Des visuels qui ont du peps, du sens et du cœur.</h1>
+      <p class="lead">Associations, indépendants, futurs mariés ou jeunes parents : je mets ma créativité au service de vos projets, depuis Fouesnant, en Finistère.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://calendly.com/annerbgraphisme/cafe-pop" target="_blank" rel="noopener">Réserver un Café POP <small>gratuit · 30 min</small></a>
+        <a class="btn btn-ghost" href="#realisations">Voir mes réalisations</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <img src="images/thumbs/fleurs.webp" alt="Illustration : portrait d'Anne avec une chevelure de fleurs colorées" width="760" height="537">
+      <p class="stamp"><b>Voyez en grand, voyez unique</b>Réponse sous quelques heures<br>Création simple en 48 à 72 h</p>
+    </div>
+  </div>
+</section>
+
+<section class="worlds" aria-label="Mes trois univers">
+  <div class="wrap worlds-grid">
+    <a class="world w-pro" href="#pros">
+      <h3>Offres POP</h3>
+      <p class="for">Pour les pros</p>
+      <p>Identité visuelle, supports imprimés et réseaux sociaux pour associations, indépendants et PME.</p>
+      <span class="go">Découvrir les offres</span>
+    </a>
+    <a class="world w-perso" href="#persos">
+      <h3>Créations persos</h3>
+      <p class="for">Pour vos jolis moments</p>
+      <p>Papeterie de mariage et de baptême, illustrations et jeux ludo-éducatifs, entièrement sur mesure.</p>
+      <span class="go">Voir les créations</span>
+    </a>
+    <a class="world w-poz" href="#poz">
+      <h3>La Poz'</h3>
+      <p class="for">Pour les parents</p>
+      <p>45 minutes en visio avec une éducatrice de jeunes enfants pour retrouver de la sérénité à la maison.</p>
+      <span class="go">Prendre une Poz'</span>
+    </a>
+  </div>
+</section>
+
+<section class="section tint-sky" id="pros">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <h2>Offres POP pour les pros</h2>
+        <p class="lead">Donner vie à votre image, simplement et efficacement. Des formules pensées pour les associations, les jeunes entreprises et les PME.</p>
+      </div>
+    </div>
+
+    <div class="cafe">
+      <div>
+        <span class="free">Gratuit</span>
+        <h3>On commence par un Café POP</h3>
+        <p>Vous me racontez votre idée, je découvre votre univers, et on voit ensemble comment lui donner forme. 30 minutes en visio, avec un café ou un thé.</p>
+        <div class="book-row"><a class="btn btn-primary" href="https://calendly.com/annerbgraphisme/cafe-pop" target="_blank" rel="noopener">Réserver mon Café POP</a>
+        <button type="button" class="btn btn-ghost show-cal" data-cal="https://calendly.com/annerbgraphisme/cafe-pop" data-target="cal-pop">Voir les créneaux ici</button></div>
+      </div>
+      <ol class="steps">
+        <li><div><b>Vous réservez un créneau</b><span>En ligne, en deux clics.</span></div></li>
+        <li><div><b>On échange 30 minutes en visio</b><span>Votre projet, vos envies, vos contraintes.</span></div></li>
+        <li><div><b>Je vous envoie une proposition</b><span>Si vous souhaitez travailler avec moi, sans engagement.</span></div></li>
+      </ol>
+      <div class="cal-slot" id="cal-pop" hidden></div>
+    </div>
+
+    <h3 class="boards-title">Mes plaquettes d'offres</h3>
+    <ul class="boards">
+      <li><button type="button" data-full="images/full/p35.webp"><img src="images/thumbs/p35.webp" alt="Plaquette : Les trois offres POP" width="560" height="774" loading="lazy" decoding="async"><span>Les trois offres POP</span></button></li>
+      <li><button type="button" data-full="images/full/p36.webp"><img src="images/thumbs/p36.webp" alt="Plaquette : POP Com’" width="560" height="774" loading="lazy" decoding="async"><span>POP Com’</span></button></li>
+      <li><button type="button" data-full="images/full/p37.webp"><img src="images/thumbs/p37.webp" alt="Plaquette : POP Rézo" width="560" height="774" loading="lazy" decoding="async"><span>POP Rézo</span></button></li>
+      <li><button type="button" data-full="images/full/p38.webp"><img src="images/thumbs/p38.webp" alt="Plaquette : Full POP" width="560" height="774" loading="lazy" decoding="async"><span>Full POP</span></button></li>
+      <li><button type="button" data-full="images/full/p34.webp"><img src="images/thumbs/p34.webp" alt="Plaquette : Tableau comparatif des offres" width="560" height="792" loading="lazy" decoding="async"><span>Tableau comparatif des offres</span></button></li>
+      <li><button type="button" data-full="images/full/p39.webp"><img src="images/thumbs/p39.webp" alt="Plaquette : Éducation et social" width="560" height="774" loading="lazy" decoding="async"><span>Éducation et social</span></button></li>
+      <li><button type="button" data-full="images/full/p41.webp"><img src="images/thumbs/p41.webp" alt="Plaquette : Sur mesure pro" width="560" height="774" loading="lazy" decoding="async"><span>Sur mesure pro</span></button></li>
+      <li><button type="button" data-full="images/full/p40.webp"><img src="images/thumbs/p40.webp" alt="Plaquette : Projets sur mesure" width="560" height="774" loading="lazy" decoding="async"><span>Projets sur mesure</span></button></li>
+    </ul>
+    <div class="offers-top">
+      <h3>Trois formules, trois tarifs selon votre structure</h3>
+      <div class="seg" role="group" aria-label="Type de structure">
+        <button type="button" data-tier="asso" aria-pressed="false">Association</button>
+        <button type="button" data-tier="pro" aria-pressed="true">Pro</button>
+        <button type="button" data-tier="biz" aria-pressed="false">Entreprise</button>
+      </div>
+    </div>
+    <div class="offers">
+      <article class="offer o-rezo">
+        <h4>POP Rézo</h4>
+        <p class="tag">Pour du contenu qui attire l'œil</p>
+        <ul><li>Templates réseaux sociaux</li><li>Bannière personnalisée</li><li>Mise en page du feed</li><li>Guide d'identité visuelle (PDF)</li></ul>
+        <p class="price" data-asso="90 €" data-pro="200 €" data-biz="300 €"><small>Forfait</small><span>200 €</span></p>
+      </article>
+      <article class="offer o-com">
+        <h4>POP Com'</h4>
+        <p class="tag">Pour communiquer avec une identité cohérente</p>
+        <ul><li>Logo professionnel</li><li>Carte de visite</li><li>Flyer ou affiche</li><li>Templates réseaux sociaux</li><li>Guide d'identité visuelle (PDF)</li></ul>
+        <p class="price" data-asso="150 €" data-pro="350 €" data-biz="450 €"><small>Forfait</small><span>350 €</span></p>
+      </article>
+      <article class="offer o-full">
+        <h4>Full POP</h4>
+        <p class="tag">Pour une communication graphique complète</p>
+        <ul><li>Logo professionnel</li><li>Carte de visite</li><li>Flyer ou affiche</li><li>Réseaux sociaux</li><li>Identité visuelle complète et guide (PDF)</li><li>Un accompagnement</li></ul>
+        <p class="price" data-asso="200 €" data-pro="500 €" data-biz="700 €"><small>Forfait</small><span>500 €</span></p>
+      </article>
+    </div>
+    <div class="extra">
+      <div>
+        <b>Éducation et social</b>
+        <p>Infographies pédagogiques, jeux socio-éducatifs, supports adaptés, livrets d'accueil, refonte de documents.</p>
+        <span class="from">À partir de 20 €</span>
+      </div>
+      <div>
+        <b>Sur mesure pro</b>
+        <p>Affiches, newsletters, magazines, CV, kakémonos, sites internet et documents interactifs.</p>
+        <span class="from">À partir de 30 €</span>
+      </div>
+    </div>
+    <p class="note">Chaque formule est personnalisable selon vos besoins. Tout autre service est disponible sur devis.</p>
+  </div>
+</section>
+
+<section class="section" id="realisations">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <h2>Réalisations</h2>
+        <p class="lead">Un aperçu des projets imaginés pour des professionnels, des couples et des familles.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filtrer les réalisations">
+        <button type="button" data-f="all" aria-pressed="true">Tout</button>
+        <button type="button" data-f="pros" aria-pressed="false">Pros</button>
+        <button type="button" data-f="mariage" aria-pressed="false">Mariage</button>
+        <button type="button" data-f="enfance" aria-pressed="false">Baptême</button>
+        <button type="button" data-f="jeux" aria-pressed="false">Jeux et pédagogie</button>
+      </div>
+    </div>
+    <p class="count" aria-live="polite"></p>
+    <div class="grid">
+      <figure class="tile" data-cat="mariage" data-full="images/full/r06.webp" tabindex="0" role="button"><img src="images/thumbs/r06.webp" alt="Album de mariage, couverture illustrée" width="600" height="600" loading="lazy" decoding="async"><figcaption>Album de mariage, couverture illustrée</figcaption></figure>
+      <figure class="tile" data-cat="pros" data-full="images/full/r33.webp" tabindex="0" role="button"><img src="images/thumbs/r33.webp" alt="Livret d’accueil de gîte" width="600" height="829" loading="lazy" decoding="async"><figcaption>Livret d’accueil de gîte</figcaption></figure>
+      <figure class="tile" data-cat="enfance" data-full="images/full/r18.webp" tabindex="0" role="button"><img src="images/thumbs/r18.webp" alt="Faire-part de baptême" width="600" height="829" loading="lazy" decoding="async"><figcaption>Faire-part de baptême</figcaption></figure>
+      <figure class="tile" data-cat="jeux" data-full="images/full/r11.webp" tabindex="0" role="button"><img src="images/thumbs/r11.webp" alt="Livre d’or bullé à colorier" width="600" height="600" loading="lazy" decoding="async"><figcaption>Livre d’or bullé à colorier</figcaption></figure>
+      <figure class="tile" data-cat="mariage" data-full="images/full/r07.webp" tabindex="0" role="button"><img src="images/thumbs/r07.webp" alt="Livret de messe et gazette des mariés" width="600" height="600" loading="lazy" decoding="async"><figcaption>Livret de messe et gazette des mariés</figcaption></figure>
+      <figure class="tile" data-cat="pros" data-full="images/full/r42.webp" tabindex="0" role="button"><img src="images/thumbs/r42.webp" alt="Logo, La Barque aux livres" width="600" height="600" loading="lazy" decoding="async"><figcaption>Logo, La Barque aux livres</figcaption></figure>
+      <figure class="tile" data-cat="enfance" data-full="images/full/r26.webp" tabindex="0" role="button"><img src="images/thumbs/r26.webp" alt="Faire-part de baptême illustré" width="600" height="711" loading="lazy" decoding="async"><figcaption>Faire-part de baptême illustré</figcaption></figure>
+      <figure class="tile" data-cat="jeux" data-full="images/full/r15.webp" tabindex="0" role="button"><img src="images/thumbs/r15.webp" alt="Livret de jeux pour enfants, mariage" width="600" height="750" loading="lazy" decoding="async"><figcaption>Livret de jeux pour enfants, mariage</figcaption></figure>
+      <figure class="tile" data-cat="mariage" data-full="images/full/r08.webp" tabindex="0" role="button"><img src="images/thumbs/r08.webp" alt="Bande dessinée personnalisée" width="600" height="600" loading="lazy" decoding="async"><figcaption>Bande dessinée personnalisée</figcaption></figure>
+      <figure class="tile" data-cat="pros" data-full="images/full/r43.webp" tabindex="0" role="button"><img src="images/thumbs/r43.webp" alt="Flyer" width="600" height="600" loading="lazy" decoding="async"><figcaption>Flyer</figcaption></figure>
+      <figure class="tile" data-cat="enfance" data-full="images/full/r27.webp" tabindex="0" role="button"><img src="images/thumbs/r27.webp" alt="Livret de baptême" width="600" height="566" loading="lazy" decoding="async"><figcaption>Livret de baptême</figcaption></figure>
+      <figure class="tile" data-cat="jeux" data-full="images/full/r29.webp" tabindex="0" role="button"><img src="images/thumbs/r29.webp" alt="Jeu des binômes" width="417" height="551" loading="lazy" decoding="async"><figcaption>Jeu des binômes</figcaption></figure>
+      <figure class="tile" data-cat="mariage" data-full="images/full/r09.webp" tabindex="0" role="button"><img src="images/thumbs/r09.webp" alt="Gazette de mariage" width="600" height="600" loading="lazy" decoding="async"><figcaption>Gazette de mariage</figcaption></figure>
+      <figure class="tile" data-cat="pros" data-full="images/full/r44.webp" tabindex="0" role="button"><img src="images/thumbs/r44.webp" alt="Brochure, Le Cirier Breton" width="600" height="600" loading="lazy" decoding="async"><figcaption>Brochure, Le Cirier Breton</figcaption></figure>
+      <figure class="tile" data-cat="enfance" data-full="images/full/r28.webp" tabindex="0" role="button"><img src="images/thumbs/r28.webp" alt="Gazette de baptême" width="600" height="559" loading="lazy" decoding="async"><figcaption>Gazette de baptême</figcaption></figure>
+      <figure class="tile" data-cat="jeux" data-full="images/full/r31.webp" tabindex="0" role="button"><img src="images/thumbs/r31.webp" alt="Livret de jeux pour enfants" width="600" height="467" loading="lazy" decoding="async"><figcaption>Livret de jeux pour enfants</figcaption></figure>
+      <figure class="tile" data-cat="mariage" data-full="images/full/r10.webp" tabindex="0" role="button"><img src="images/thumbs/r10.webp" alt="Cadeau pour les témoins" width="600" height="424" loading="lazy" decoding="async"><figcaption>Cadeau pour les témoins</figcaption></figure>
+      <figure class="tile" data-cat="pros" data-full="images/full/r45.webp" tabindex="0" role="button"><img src="images/thumbs/r45.webp" alt="Calendrier, Les Graines de Génies" width="600" height="600" loading="lazy" decoding="async"><figcaption>Calendrier, Les Graines de Génies</figcaption></figure>
+      <figure class="tile" data-cat="enfance" data-full="images/full/r30.webp" tabindex="0" role="button"><img src="images/thumbs/r30.webp" alt="Livret de marraine" width="600" height="647" loading="lazy" decoding="async"><figcaption>Livret de marraine</figcaption></figure>
+      <figure class="tile" data-cat="jeux" data-full="images/full/r32.webp" tabindex="0" role="button"><img src="images/thumbs/r32.webp" alt="Livret illustré pour enfants" width="600" height="829" loading="lazy" decoding="async"><figcaption>Livret illustré pour enfants</figcaption></figure>
+      <figure class="tile" data-cat="mariage" data-full="images/full/r12.webp" tabindex="0" role="button"><img src="images/thumbs/r12.webp" alt="Logo de mariage" width="600" height="600" loading="lazy" decoding="async"><figcaption>Logo de mariage</figcaption></figure>
+      <figure class="tile" data-cat="pros" data-full="images/full/r46.webp" tabindex="0" role="button"><img src="images/thumbs/r46.webp" alt="Calendrier annuel" width="600" height="600" loading="lazy" decoding="async"><figcaption>Calendrier annuel</figcaption></figure>
+      <figure class="tile" data-cat="jeux" data-full="images/full/r52.webp" tabindex="0" role="button"><img src="images/thumbs/r52.webp" alt="Cours mis en page" width="600" height="600" loading="lazy" decoding="async"><figcaption>Cours mis en page</figcaption></figure>
+      <figure class="tile" data-cat="mariage" data-full="images/full/r13.webp" tabindex="0" role="button"><img src="images/thumbs/r13.webp" alt="Plan de table et affiches" width="600" height="600" loading="lazy" decoding="async"><figcaption>Plan de table et affiches</figcaption></figure>
+      <figure class="tile" data-cat="pros" data-full="images/full/r47.webp" tabindex="0" role="button"><img src="images/thumbs/r47.webp" alt="Cartes postales illustrées" width="600" height="600" loading="lazy" decoding="async"><figcaption>Cartes postales illustrées</figcaption></figure>
+      <figure class="tile" data-cat="jeux" data-full="images/full/r61.webp" tabindex="0" role="button"><img src="images/thumbs/r61.webp" alt="Jeu pédagogique" width="600" height="600" loading="lazy" decoding="async"><figcaption>Jeu pédagogique</figcaption></figure>
+      <figure class="tile" data-cat="mariage" data-full="images/full/r14.webp" tabindex="0" role="button"><img src="images/thumbs/r14.webp" alt="Affiche en mémoire des absents" width="600" height="424" loading="lazy" decoding="async"><figcaption>Affiche en mémoire des absents</figcaption></figure>
+      <figure class="tile" data-cat="pros" data-full="images/full/r48.webp" tabindex="0" role="button"><img src="images/thumbs/r48.webp" alt="Panneau, Les légumes de Mousterlin" width="600" height="600" loading="lazy" decoding="async"><figcaption>Panneau, Les légumes de Mousterlin</figcaption></figure>
+      <figure class="tile" data-cat="mariage" data-full="images/full/r16.webp" tabindex="0" role="button"><img src="images/thumbs/r16.webp" alt="Tableau de bienvenue" width="600" height="800" loading="lazy" decoding="async"><figcaption>Tableau de bienvenue</figcaption></figure>
+      <figure class="tile" data-cat="pros" data-full="images/full/r49.webp" tabindex="0" role="button"><img src="images/thumbs/r49.webp" alt="Flyer, Un jour un cyanotype" width="600" height="600" loading="lazy" decoding="async"><figcaption>Flyer, Un jour un cyanotype</figcaption></figure>
+      <figure class="tile" data-cat="mariage" data-full="images/full/r17.webp" tabindex="0" role="button"><img src="images/thumbs/r17.webp" alt="Étiquettes de vin" width="600" height="882" loading="lazy" decoding="async"><figcaption>Étiquettes de vin</figcaption></figure>
+      <figure class="tile" data-cat="pros" data-full="images/full/r50.webp" tabindex="0" role="button"><img src="images/thumbs/r50.webp" alt="Projet d’accueil" width="600" height="600" loading="lazy" decoding="async"><figcaption>Projet d’accueil</figcaption></figure>
+      <figure class="tile" data-cat="mariage" data-full="images/full/r19.webp" tabindex="0" role="button"><img src="images/thumbs/r19.webp" alt="Monogramme des mariés" width="600" height="829" loading="lazy" decoding="async"><figcaption>Monogramme des mariés</figcaption></figure>
+      <figure class="tile" data-cat="pros" data-full="images/full/r51.webp" tabindex="0" role="button"><img src="images/thumbs/r51.webp" alt="Brochure" width="600" height="600" loading="lazy" decoding="async"><figcaption>Brochure</figcaption></figure>
+      <figure class="tile" data-cat="mariage" data-full="images/full/r20.webp" tabindex="0" role="button"><img src="images/thumbs/r20.webp" alt="Arbre à empreintes et mots croisés" width="600" height="600" loading="lazy" decoding="async"><figcaption>Arbre à empreintes et mots croisés</figcaption></figure>
+      <figure class="tile" data-cat="pros" data-full="images/full/r53.webp" tabindex="0" role="button"><img src="images/thumbs/r53.webp" alt="Cartes de visite, Mon Educ Lib" width="600" height="600" loading="lazy" decoding="async"><figcaption>Cartes de visite, Mon Educ Lib</figcaption></figure>
+      <figure class="tile" data-cat="mariage" data-full="images/full/r21.webp" tabindex="0" role="button"><img src="images/thumbs/r21.webp" alt="Livre souvenir photo" width="600" height="452" loading="lazy" decoding="async"><figcaption>Livre souvenir photo</figcaption></figure>
+      <figure class="tile" data-cat="pros" data-full="images/full/r54.webp" tabindex="0" role="button"><img src="images/thumbs/r54.webp" alt="Flyers, ArpenTerre" width="600" height="600" loading="lazy" decoding="async"><figcaption>Flyers, ArpenTerre</figcaption></figure>
+      <figure class="tile" data-cat="mariage" data-full="images/full/r22.webp" tabindex="0" role="button"><img src="images/thumbs/r22.webp" alt="Plan de table" width="600" height="600" loading="lazy" decoding="async"><figcaption>Plan de table</figcaption></figure>
+      <figure class="tile" data-cat="pros" data-full="images/full/r55.webp" tabindex="0" role="button"><img src="images/thumbs/r55.webp" alt="Roll-up, sophrologue" width="600" height="600" loading="lazy" decoding="async"><figcaption>Roll-up, sophrologue</figcaption></figure>
+      <figure class="tile" data-cat="mariage" data-full="images/full/r23.webp" tabindex="0" role="button"><img src="images/thumbs/r23.webp" alt="Badges personnalisés" width="600" height="314" loading="lazy" decoding="async"><figcaption>Badges personnalisés</figcaption></figure>
+      <figure class="tile" data-cat="pros" data-full="images/full/r56.webp" tabindex="0" role="button"><img src="images/thumbs/r56.webp" alt="Logo sur tote bag" width="600" height="600" loading="lazy" decoding="async"><figcaption>Logo sur tote bag</figcaption></figure>
+      <figure class="tile" data-cat="mariage" data-full="images/full/r24.webp" tabindex="0" role="button"><img src="images/thumbs/r24.webp" alt="Livret souvenir photo" width="600" height="299" loading="lazy" decoding="async"><figcaption>Livret souvenir photo</figcaption></figure>
+      <figure class="tile" data-cat="pros" data-full="images/full/r57.webp" tabindex="0" role="button"><img src="images/thumbs/r57.webp" alt="Newsletters, Jouons Crescendo" width="600" height="600" loading="lazy" decoding="async"><figcaption>Newsletters, Jouons Crescendo</figcaption></figure>
+      <figure class="tile" data-cat="mariage" data-full="images/full/r25.webp" tabindex="0" role="button"><img src="images/thumbs/r25.webp" alt="Menu de mariage" width="600" height="901" loading="lazy" decoding="async"><figcaption>Menu de mariage</figcaption></figure>
+      <figure class="tile" data-cat="pros" data-full="images/full/r58.webp" tabindex="0" role="button"><img src="images/thumbs/r58.webp" alt="Roll-up, Les Graines de Génies" width="600" height="600" loading="lazy" decoding="async"><figcaption>Roll-up, Les Graines de Génies</figcaption></figure>
+      <figure class="tile" data-cat="pros" data-full="images/full/r59.webp" tabindex="0" role="button"><img src="images/thumbs/r59.webp" alt="Site internet" width="600" height="600" loading="lazy" decoding="async"><figcaption>Site internet</figcaption></figure>
+      <figure class="tile" data-cat="pros" data-full="images/full/r60.webp" tabindex="0" role="button"><img src="images/thumbs/r60.webp" alt="Logo Anne RB" width="600" height="600" loading="lazy" decoding="async"><figcaption>Logo Anne RB</figcaption></figure>
+      <figure class="tile" data-cat="pros" data-full="images/full/r62.webp" tabindex="0" role="button"><img src="images/thumbs/r62.webp" alt="CV mis en page" width="600" height="600" loading="lazy" decoding="async"><figcaption>CV mis en page</figcaption></figure>
+      <figure class="tile" data-cat="pros" data-full="images/full/r63.webp" tabindex="0" role="button"><img src="images/thumbs/r63.webp" alt="Site internet" width="600" height="600" loading="lazy" decoding="async"><figcaption>Site internet</figcaption></figure>
+      <figure class="tile" data-cat="pros" data-full="images/full/r64.webp" tabindex="0" role="button"><img src="images/thumbs/r64.webp" alt="Trombinoscope illustré" width="600" height="600" loading="lazy" decoding="async"><figcaption>Trombinoscope illustré</figcaption></figure>
+      <figure class="tile" data-cat="pros" data-full="images/full/r65.webp" tabindex="0" role="button"><img src="images/thumbs/r65.webp" alt="Mise en page de projet" width="600" height="600" loading="lazy" decoding="async"><figcaption>Mise en page de projet</figcaption></figure>
+      <figure class="tile" data-cat="pros" data-full="images/full/r66.webp" tabindex="0" role="button"><img src="images/thumbs/r66.webp" alt="Magazine littéraire" width="600" height="600" loading="lazy" decoding="async"><figcaption>Magazine littéraire</figcaption></figure>
+      <figure class="tile" data-cat="pros" data-full="images/full/r67.webp" tabindex="0" role="button"><img src="images/thumbs/r67.webp" alt="Magazine mis en page" width="600" height="600" loading="lazy" decoding="async"><figcaption>Magazine mis en page</figcaption></figure>
+      <figure class="tile" data-cat="pros" data-full="images/full/r68.webp" tabindex="0" role="button"><img src="images/thumbs/r68.webp" alt="Flyer événementiel" width="600" height="600" loading="lazy" decoding="async"><figcaption>Flyer événementiel</figcaption></figure>
+      <figure class="tile" data-cat="pros" data-full="images/full/r69.webp" tabindex="0" role="button"><img src="images/thumbs/r69.webp" alt="Brochure" width="600" height="600" loading="lazy" decoding="async"><figcaption>Brochure</figcaption></figure>
+    </div>
+    <p class="more-wrap"><button type="button" class="btn btn-ghost more">Voir plus de réalisations</button></p>
+  </div>
+</section>
+
+<section class="section tint-lilac" id="persos">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <h2>Créations persos</h2>
+        <p class="lead">Vous me confiez vos thématiques, vos couleurs et vos envies ; j'imagine des créations qui vous ressemblent, pour un jour unique.</p>
+      </div>
+    </div>
+    <div class="perso-grid">
+      <article class="perso">
+        <svg class="heart" viewBox="0 0 34 30" aria-hidden="true"><path d="M17 29 3.5 15.8A8.2 8.2 0 0 1 17 5.2a8.2 8.2 0 0 1 13.5 10.6Z" fill="#cfa6cc"/></svg>
+        <h3>Mariage</h3>
+        <dl>
+          <dt>Avant le mariage</dt><dd>Faire-part, logo personnalisé, plan de table, livret de messe</dd>
+          <dt>Le jour J</dt><dd>Tableau de bienvenue, affiches, arbre à empreintes, jeux pour enfants et adultes</dd>
+          <dt>Souvenirs</dt><dd>Gazette, livre d'or, cadeaux invités, vidéo photo</dd>
+        </dl>
+      </article>
+      <article class="perso">
+        <svg class="heart" viewBox="0 0 34 30" aria-hidden="true"><path d="M17 29 3.5 15.8A8.2 8.2 0 0 1 17 5.2a8.2 8.2 0 0 1 13.5 10.6Z" fill="#a9bfdc"/></svg>
+        <h3>Baptême et naissance</h3>
+        <dl>
+          <dt>Avant la cérémonie</dt><dd>Faire-part, logo personnalisé, plan de table, livret de messe</dd>
+          <dt>Le jour J</dt><dd>Tableau de bienvenue, affiches, jeux personnalisés</dd>
+          <dt>Autres événements</dt><dd>Anniversaire, anniversaire de mariage, naissance</dd>
+        </dl>
+      </article>
+      <article class="perso">
+        <svg class="heart" viewBox="0 0 34 30" aria-hidden="true"><circle cx="17" cy="15" r="13" fill="#bccd5c"/></svg>
+        <h3>Projets perso</h3>
+        <dl>
+          <dt>Création</dt><dd>Visuels, affiches, publications Instagram, mise en page de livres</dd>
+          <dt>Papeterie et souvenirs</dt><dd>Gazette d'anniversaire, magazine photo</dd>
+          <dt>Animation et jeux</dt><dd>Livrets de jeux éducatifs, jeux sur mesure</dd>
+        </dl>
+      </article>
+    </div>
+    <h3 class="boards-title">Mes plaquettes</h3>
+    <ul class="boards">
+      <li><button type="button" data-full="images/full/p03.webp"><img src="images/thumbs/p03.webp" alt="Plaquette : Créations persos" width="560" height="774" loading="lazy" decoding="async"><span>Créations persos</span></button></li>
+      <li><button type="button" data-full="images/full/p05.webp"><img src="images/thumbs/p05.webp" alt="Plaquette : Mariage" width="560" height="774" loading="lazy" decoding="async"><span>Mariage</span></button></li>
+      <li><button type="button" data-full="images/full/p02.webp"><img src="images/thumbs/p02.webp" alt="Plaquette : Baptême" width="560" height="774" loading="lazy" decoding="async"><span>Baptême</span></button></li>
+      <li><button type="button" data-full="images/full/p04.webp"><img src="images/thumbs/p04.webp" alt="Plaquette : Projets perso" width="560" height="774" loading="lazy" decoding="async"><span>Projets perso</span></button></li>
+    </ul>
+    <p><b>À partir de 15 €</b>, projet personnalisé sur devis. <a href="mailto:annerbgraphisme@gmail.com">Demander un devis par e-mail</a></p>
+  </div>
+</section>
+
+<section class="section tint-rose" id="poz">
+  <div class="wrap poz">
+    <div>
+      <h2>La Poz' des parents</h2>
+      <p class="lead" style="margin-top:14px">Un doute ? Une tempête émotionnelle ? Envie de faire une pause avec une professionnelle de la petite enfance ?</p>
+      <p>Le quotidien avec de jeunes enfants est une aventure intense, parfois magique, souvent épuisante. Colères, refus de prêter, nuits hachées… on se sent parfois bien seul.</p>
+      <p>En tant qu'éducatrice de jeunes enfants, je vous propose un espace d'écoute bienveillant, à l'abri du jugement. On pose les choses, et on avance ensemble.</p>
+      <ol class="steps" style="margin-top:28px">
+        <li><div><b>Vous réservez un créneau</b><span>En répondant à deux ou trois questions pour que je prépare notre échange.</span></div></li>
+        <li><div><b>On se retrouve 45 minutes en visio</b><span>On décortique la situation et on trouve des clés concrètes, applicables dès le soir.</span></div></li>
+        <li><div><b>Vous recevez votre mémo illustré</b><span>Une infographie personnalisée (PDF), à garder ou à afficher sur le frigo.</span></div></li>
+      </ol>
+    </div>
+    <aside class="card">
+      <h3>Une Poz'</h3>
+      <p class="price">45 €</p>
+      <ul>
+        <li>45 minutes en visio</li>
+        <li>Mémo illustré et personnalisé inclus</li>
+        <li>Paiement après facture</li>
+      </ul>
+      <div class="book-row" style="margin-top:22px"><a class="btn btn-rose" href="https://calendly.com/annerbgraphisme/la-poz" target="_blank" rel="noopener">Réserver ma Poz'</a>
+      <button type="button" class="btn btn-ghost show-cal" data-cal="https://calendly.com/annerbgraphisme/la-poz" data-target="cal-poz" style="color:var(--rose-ink)">Voir les créneaux ici</button></div>
+    </aside>
+    <div class="cal-slot" id="cal-poz" hidden style="grid-column:1/-1"></div>
+  </div>
+</section>
+
+<section class="section tint-lilac" id="avis">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <h2>Mots doux</h2>
+        <p class="lead">Ce que disent les professionnels, les mariés et les familles après notre collaboration.</p>
+      </div>
+    </div>
+    <div class="reviews-feature">
+      <figure class="quote big"><blockquote>« Elle écoute, questionne, reformule, challenge mes textes avec finesse et bienveillance, et sait faire émerger ce qui est essentiel sans trahir ma philosophie professionnelle. »</blockquote><figcaption>Bérangère Barbaud, Mon Educ Lib <span class="kind k-pro">Pro</span></figcaption></figure>
+      <div class="reviews-side"><figure class="quote"><blockquote>« Anne a su comprendre exactement ce que je souhaitais et le retranscrire avec une sensibilité incroyable. »</blockquote><figcaption>Lola <span class="kind k-bapteme">Baptême</span></figcaption></figure><figure class="quote"><blockquote>« Elle fait du sur mesure… elle est force de proposition et de très bons conseils. »</blockquote><figcaption>Anneju <span class="kind k-mariage">Mariage</span></figcaption></figure></div>
+    </div>
+    <div class="reviews-grid"><figure class="quote"><blockquote>« Un travail soigné, personnalisé et des prix plus que raisonnables. »</blockquote><figcaption>Shona <span class="kind k-pro">Pro</span></figcaption></figure><figure class="quote"><blockquote>« Elle a su deviner ma personnalité et ma sensibilité pour la réalisation de mes cartes de visites. Un graphisme personnalisé et raffiné ! »</blockquote><figcaption>Virginie <span class="kind k-pro">Pro</span></figcaption></figure><figure class="quote"><blockquote>« Superbe travail réalisé pour la gazette de notre mariage. Tout a été personnalisé dans les moindres détails. »</blockquote><figcaption>Jade <span class="kind k-mariage">Mariage</span></figcaption></figure></div>
+    <details class="all-reviews">
+      <summary>Lire les 22 avis en entier</summary>
+      <div class="all-list">
+<figure class="quote"><blockquote>Travailler sur son identité, son livret d&#x27;accueil et son site n&#x27;est jamais un simple exercice graphique : c&#x27;est un travail de traduction, de justesse et de sens. Cela fait maintenant un peu plus d&#x27;un an que je collabore avec Anne. Ancienne éducatrice de jeunes enfants devenue graphiste, elle a cette double lecture rare : celle du métier et celle de la communication. Au-delà de son expertise, ce qui fait vraiment la différence, c&#x27;est sa manière de travailler : elle écoute, questionne, reformule, challenge mes textes avec finesse et bienveillance, et sait faire émerger ce qui est essentiel sans trahir ma philosophie professionnelle. Elle a retravaillé mon livret d&#x27;accueil, accompagné son adaptation en FALC pour mes ateliers d&#x27;Habiletés sociales &amp; Vivre ensemble, et contribue aujourd&#x27;hui à la refonte de mon site. À chaque étape, elle est une vraie force de proposition pour mon identité visuelle, tout en respectant ce que je souhaite donner à voir de mon travail et de ma posture. La communication n&#x27;est pas innée pour tout le monde — et c&#x27;est précisément là que des professionnelles comme Anne sont précieuses. Sa rigueur, son regard critique, mais aussi ses qualités humaines rendent ce travail à la fois exigeant et fluide. Un grand merci pour ce partenariat qui s&#x27;inscrit dans la durée et dans le sens.</blockquote><figcaption>Mon Educ Lib - Bérangère Barbaud <span class="kind k-pro">Pro</span></figcaption></figure>
+<figure class="quote"><blockquote>Au top du top!!! Pour notre mariage Anne a su répondre parfaitement à nos demandes. Elle a cerné à la perfection nos attentes et à retravailler à plusieurs reprises sur nos différents projets. Elle fait du sur mesure…elle est très douée et nos attentes étaient bien plus qu&#x27;atteints: elle est force de proposition et de très bons conseils. Elle connaît son métier sur le bout des doigts. Elle a créé pour nous: nos faire parts, nos livrets de cérémonies, notre plan de table, nos menus, notre gazette, nos livrets jeux enfants, … Si j&#x27;avais un conseil: vous pouvez y aller les yeux fermés vous ne regretterez absolument rien!!!!!!</blockquote><figcaption>Anneju <span class="kind k-mariage">Mariage</span></figcaption></figure>
+<figure class="quote"><blockquote>Un immense merci à Anne . Anne a su comprendre exactement ce que je souhaitais et le retranscrire avec une sensibilité incroyable. Chaque détail est pensé avec soin, et on ressent la passion et le cœur mis dans chacune de ses créations. Merci pour ton investissement, ta gentillesse et ton talent.Je recommande les yeux fermés</blockquote><figcaption>Lola <span class="kind k-bapteme">Baptême</span></figcaption></figure>
+<figure class="quote"><blockquote>Anne est géniale ! Travail de grande qualité, échanges fluides, délais respectés. Et surtout Anne est pleine de talent !</blockquote><figcaption>Charlyne <span class="kind k-perso">Perso</span></figcaption></figure>
+<figure class="quote"><blockquote>Je suis ravie de cette collaboration. Merci pour ton travail, ton investissement et la qualité de ton accompagnement. Tes conseils ont été très précieux et le résultat est à la hauteur de mes attentes. Merci, Anne je recommande</blockquote><figcaption>Cindy Padey <span class="kind k-perso">Perso</span></figcaption></figure>
+<figure class="quote"><blockquote>Un immense merci à Anne D&#x27;une gentillesse incroyable, toujours à l&#x27;écoute, elle sait créer et sublimer nos idées avec beaucoup de talent.Un travail soigné, personnalisé et des prix plus que raisonnables.Je recommande les yeux fermés</blockquote><figcaption>Shona <span class="kind k-pro">Pro</span></figcaption></figure>
+<figure class="quote"><blockquote>Je recommande a 100% très professionnelle, à l&#x27;écoute, rien à dire je suis très contente de ses créations qui m&#x27;ont permis de gagner un temps fou dans les préparatifs de mon mariage !</blockquote><figcaption>Anne-So <span class="kind k-mariage">Mariage</span></figcaption></figure>
+<figure class="quote"><blockquote>que dire ... juste PARFAIT. mariage dans 10 jours. nous avons commencé par les faire-parts puis des gazettes... des autocollants ... des registres bref Anne est exceptionnelle . travail superbe, rapide, personnalisé. merci merci merci !</blockquote><figcaption>Marie Azeline <span class="kind k-mariage">Mariage</span></figcaption></figure>
+<figure class="quote"><blockquote>Le travail réalisé par Anne est fabuleux je suis ravie et agréablement surprise, pour un mariage c&#x27;est vraiment la personne qu&#x27;il vous faut ses livrets jeux sont au top ! encore merci ! la petite attention pour ma fille a été vivement appréciée</blockquote><figcaption>Jennifer <span class="kind k-mariage">Mariage</span></figcaption></figure>
+<figure class="quote"><blockquote>je recommande Anne roy pro sans hésitation, créatrice efficace, réactive, très professionnelle, et rapport qualité prix très raisonnable. envoi rapide et soigné. merci   encore pour Les livrets qui sont juste parfait</blockquote><figcaption>Sandra <span class="kind k-mariage">Mariage</span></figcaption></figure>
+<figure class="quote"><blockquote>Anne est une belle personne. À l&#x27;écoute, professionnelle, et très créative.Je lui ai confié la réalisation de mes cartes de visite et de remerciement. Un SUCCÈS.Je la recommande et je reviendrai vers elle pour de nouvelles créations.</blockquote><figcaption>Gisèle <span class="kind k-pro">Pro</span></figcaption></figure>
+<figure class="quote"><blockquote>Anne a réalisé des livrets de jeux pour notre mariage et nous sommes entièrement satisfaits. Elle a été à l&#x27;écoute du debut à la fin et de très bons conseils. Le résultat est au Rdv et nous avons hâte de pouvoir les utiliser au mariage  !!</blockquote><figcaption>Céline <span class="kind k-mariage">Mariage</span></figcaption></figure>
+<figure class="quote"><blockquote>Anne est la meilleure. une vraie professionnelle mais surtout à l&#x27;écoute, patiente, attentionnée pour &#x27;ne pas dire aux petits soins. je la recommande +++++. parole de future mariée. très touchée par son travail créatif et c&#x27;est une belle personne</blockquote><figcaption>Dorothée <span class="kind k-perso">Perso</span></figcaption></figure>
+<figure class="quote"><blockquote>Un grand merci à Anne pour son aide dans la création de ma gazette des mariés. Elle est à l&#x27;écoute et d&#x27;un grand professionnalisme! Je la recommande sans hésiter! Tout à l&#x27;air si simple quand c&#x27;est elle qui a la main! Encore merci à toi. Tu es une très belle personne .  Sabine</blockquote><figcaption>Sabine <span class="kind k-mariage">Mariage</span></figcaption></figure>
+<figure class="quote"><blockquote>Une rencontre et une feeling évident avec Anne. Elle a su deviner ma personnalité et ma sensibilité pour la réalisation de mes cartes de visites. Un graphisme personnalisé et raffiné ! Une très belle professionnelle avec beaucoup de goûts et d&#x27;idées ! Je recommande !</blockquote><figcaption>Virginie <span class="kind k-pro">Pro</span></figcaption></figure>
+<figure class="quote"><blockquote>Anne est d&#x27;une écoute attentive pour votre mariage . Elle saura capter de suite ce que vous voulez . Elle peut également vous conseiller que d&#x27;autres projets et horizons, cela est très rassurant croyez moi ! Très professionnelle et humaine ! Je recommande</blockquote><figcaption>Mélanie <span class="kind k-mariage">Mariage</span></figcaption></figure>
+<figure class="quote"><blockquote>Superbe travail réalisé pour la gazette de notre mariage. Tout a été personnalisé dans les moindres détails. Anne est patiente, gentille et rigoureuse. Nous sommes plus que ravis de la qualité du travail fourni. Merci encore !</blockquote><figcaption>Jade <span class="kind k-mariage">Mariage</span></figcaption></figure>
+<figure class="quote"><blockquote>Excellente en tout point Contact parfait! Nous sommes entièrement satisfait du travail rendu Qualité prix et conseils au top Je recommande à 200 %</blockquote><figcaption>Sandrine <span class="kind k-mariage">Mariage</span></figcaption></figure>
+<figure class="quote"><blockquote>J&#x27;ai eu une chance inouïe de rencontrer Anne ! Il s&#x27;agit d&#x27;une personne très impliquée dans sa mission. Elle a mis sa patte pour la création de toute la papeterie du baptême de ma princesse (faire parts, gazettes, menus, coloriages, jeux, visuels personnalisés, livre d&#x27;or, urne, origamis...) Des colis préparés avec attention et soin ! Des conseils précieux pour m&#x27;aider dans la confection. En plus de tout cela, elle est très patiente, innovante et attentionnée !</blockquote><figcaption>Angélina <span class="kind k-bapteme">Baptême</span></figcaption></figure>
+<figure class="quote"><blockquote>Anne est une personne adorable et d&#x27;une patience incroyable, elle laisse court à son imagination et son talent qui croyais moi sont juste époustouflant. Je lui ai fais confiance pour le baptême de ma fille et je lui referai confiance à l&#x27;avenir sa c&#x27;est certain ! Encore mille merci d&#x27;avoir sublimé cette journée et heureuse d&#x27;avoir pu te rencontrer</blockquote><figcaption>Mégane <span class="kind k-bapteme">Baptême</span></figcaption></figure>
+<figure class="quote"><blockquote>Au top du top. Anne s&#x27;est occupée de notre mariage ( gazette, livret de cérémonie et d&#x27;autres choses). Très professionnelle , à l&#x27;écoute,  à de très bonnes idées et très créative.  Nous avons de nouveaux fait appel  à Anne pour le baptême de notre fils et c&#x27;est vraiment génial ce qu&#x27;elle fait. nous adorons son travail. De plus  Anne est très gentille et très disponible. Nous l&#x27;a recommandons à 100%. Faites lui confiance et vous n&#x27;allez pas être déçu. Un grand merci à  toi Anne.</blockquote><figcaption>Lucie <span class="kind k-mariage">Mariage</span></figcaption></figure>
+<figure class="quote"><blockquote>Anne a été parfaite. Le baptême de notre fille est dans 3 jours, et elle a su répondre à toutes nos attentes concernant un arbre à empreintes. Elle a aussi fait un super coloriage pour les enfants présents ce week-end. Ce dernier est juste magnifique !Vraiment une super personne pleine de générosité. Merci encore</blockquote><figcaption>Hélisa <span class="kind k-bapteme">Baptême</span></figcaption></figure>
+      </div>
+    </details>
+  </div>
+</section>
+<section class="section" id="clients">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <h2>Ils m'ont fait confiance</h2>
+        <p class="lead">Et pour certains, encore aujourd'hui. Touchez un nom pour voir ce que nous avons réalisé ensemble.</p>
+      </div>
+    </div>
+    <div class="clients">
+      <details><summary>Collectif des Nés sous X</summary><p>Dépliant 2026, marque-page. <a href="https://www.collectifnesx.fr/" target="_blank" rel="noopener">Voir le site</a></p></details>
+      <details><summary>Librairies La Barque aux livres</summary><p>Visuels, flyers, identité graphique, refonte du site internet, événements et réseaux sociaux. <a href="https://www.labarqueauxlivres.com/" target="_blank" rel="noopener">Voir le site</a></p></details>
+      <details><summary>Association L&#x27;EnormeAimant</summary><p>Magazine mensuel Loup Ping&#x27; pendant un an, identité de projets culturels.</p></details>
+      <details><summary>Association Quand un sourire suffit</summary><p>Plaquette « Le handicap : abordons-le ensemble ».</p></details>
+      <details><summary>Delphine Duvet, éducatrice spécialisée</summary><p>Flyer, carte de visite.</p></details>
+      <details><summary>Association ALMA de Musique</summary><p>Site internet. <a href="https://almamusique.wixsite.com/alma" target="_blank" rel="noopener">Voir le site</a></p></details>
+      <details><summary>Professeur de LFE</summary><p>Logo, livrets de niveaux.</p></details>
+      <details><summary>Mairie de Saint-Germain-sur-Morin</summary><p>Coordination de la bibliothèque, nouvelle identité graphique, site internet, magazine mensuel. <a href="https://bibliothequevercors77.webnode.fr/" target="_blank" rel="noopener">Site de la bibliothèque</a> <a href="http://www.calameo.com/accounts/6503220" target="_blank" rel="noopener">Magazine</a></p></details>
+      <details><summary>Stéphanie Robardelle, sophrologue</summary><p>Logo, flyer, cartes de visite.</p></details>
+      <details><summary>Le Magazine Participatif</summary><p>Publications en ligne, site internet. <a href="https://www.calameo.com/accounts/7294265" target="_blank" rel="noopener">Publications</a> <a href="https://lempmagazine.webnode.fr/" target="_blank" rel="noopener">Site</a></p></details>
+      <details><summary>Association Les Graines de Génies</summary><p>Logo, charte graphique, affiches, Instagram.</p></details>
+      <details><summary>Cours adaptés collège et DYS</summary><p>Mise en page de cours.</p></details>
+      <details><summary>ArpenTerre</summary><p>Logo, flyer, site internet. <a href="https://arpenterre.fr/" target="_blank" rel="noopener">Voir le site</a></p></details>
+      <details><summary>Association AFR Vatan</summary><p>Flyers, livret de bienvenue, newsletter trimestrielle, offres d&#x27;emploi. <a href="https://www.facebook.com/FamillesRuralesVatan/" target="_blank" rel="noopener">Page Facebook</a></p></details>
+      <details><summary>Marina Demini, sophrologue</summary><p>Flyer, site internet.</p></details>
+      <details><summary>Association Jouons Crescendo</summary><p>Logo, charte graphique, flyers, site internet, réseaux sociaux. <a href="https://jouons-crescendo.webnode.fr/" target="_blank" rel="noopener">Voir le site</a></p></details>
+      <details><summary>L&#x27;inclusion sur mesure</summary><p>Flyer, site internet. <a href="https://www.linclusionsurmesure.fr/" target="_blank" rel="noopener">Voir le site</a></p></details>
+      <details><summary>Boutique Mamajé</summary><p>Carte de fidélité, flyer.</p></details>
+      <details><summary>Mon Educ Lib</summary><p>Logo, flyers, visuels, site internet, refonte de jeux de cartes. <a href="https://moneduclib.webnode.fr/" target="_blank" rel="noopener">Voir le site</a></p></details>
+      <details><summary>TDK studios</summary><p>Charte graphique, site internet. <a href="https://tdk-studio.webnode.fr/" target="_blank" rel="noopener">Voir le site</a></p></details>
+      <details><summary>Un jour un cyanotype</summary><p>Logo, charte graphique, flyer, marque-page, site internet. <a href="https://www.unjouruncyanotype.fr/" target="_blank" rel="noopener">Voir le site</a></p></details>
+      <details><summary>Shona Callu, assistante maternelle</summary><p>Mise en page du livret d&#x27;accueil.</p></details>
+      <details><summary>Camille Odéon, naturopathe</summary><p>Identité graphique, page Instagram.</p></details>
+      <details><summary>Association Arts et Savoirs, Houlgate</summary><p>Kakémono et visuels.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq" style="padding-top:0">
+  <div class="wrap">
+    <h2 style="margin-bottom:28px">Questions fréquentes</h2>
+    <div class="faq">
+      <details><summary>Comment vous contacter pour un devis sur mesure ?</summary><p>Écrivez-moi à <a href="mailto:annerbgraphisme@gmail.com">annerbgraphisme@gmail.com</a> ou via les réseaux sociaux. Je réponds sous quelques heures.</p></details>
+      <details><summary>Quel est le délai de confection ?</summary><p>Comptez 48 à 72 heures pour une création simple.</p></details>
+      <details><summary>Puis-je utiliser les visuels de ce site ?</summary><p>Non. Tous les visuels sont imaginés et créés par Anne RB et protégés par le droit d'auteur : toute reproduction est interdite.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="section tint-sky" id="anne">
+  <div class="wrap about">
+    <img src="images/thumbs/portrait.webp" alt="Anne RB à son bureau, carnet en main" width="700" height="967" loading="lazy">
+    <div>
+      <h2>Qui suis-je</h2>
+      <p class="lead" style="margin-top:14px">Éducatrice de jeunes enfants de formation, j'ai toujours eu une immense appétence pour le graphisme.</p>
+      <p>Création de l'identité d'un projet de crèche, ateliers d'éveil en libéral, présidence et communication d'une association, coordination d'une bibliothèque municipale, ouverture d'un groupe de librairies : mon parcours est un fil rouge tissé d'enfance, d'humain et de créativité.</p>
+      <p>Aujourd'hui, je rassemble toutes ces vies dans le graphisme en freelance, spécialisée dans l'univers de la petite enfance et de l'humain. Et parce que le contact avec les familles me manquait, je garde ma casquette d'éducatrice avec La Poz'.</p>
+      <ul class="words" aria-label="Quatre mots pour me définir">
+        <li style="--c:var(--lilac-soft)">rigoureuse</li>
+        <li style="--c:#fff">déterminée</li>
+        <li style="--c:#e9f2d2">créative</li>
+        <li style="--c:var(--rose-soft)">minutieuse</li>
+      </ul>
+      <div class="about-links">
+        <a class="btn btn-primary" href="CV-Anne-Roy-Bouchard.pdf" download="CV-Anne-Roy-Bouchard.pdf">Télécharger mon CV <small>PDF</small></a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/anne-roy-bouchard-724358106/" target="_blank" rel="noopener">Mon profil LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="contact" id="contact">
+  <div class="wrap">
+    <h2>Parlons de votre projet</h2>
+    <p class="lead">Je réponds sous quelques heures. Une création simple demande 48 à 72 heures.</p>
+    <div class="contact-grid">
+      <div class="book">
+        <a class="btn btn-primary" href="https://calendly.com/annerbgraphisme/cafe-pop" target="_blank" rel="noopener">Réserver un Café POP <small>gratuit · 30 min</small></a>
+        <a class="btn btn-rose" href="https://calendly.com/annerbgraphisme/la-poz" target="_blank" rel="noopener">Réserver une Poz' <small>45 min · 45 €</small></a>
+      </div>
+      <address>
+        Mousterlin, Fouesnant (Finistère) · <a href="#carte">voir la carte</a><br>
+        <a href="mailto:annerbgraphisme@gmail.com">annerbgraphisme@gmail.com</a><br>
+        <a href="tel:+33659727668">06 59 72 76 68</a><br>
+        <a href="https://www.instagram.com/annerbgraphisme" target="_blank" rel="noopener">Instagram</a> ·
+        <a href="https://www.facebook.com/annerbgraphisme" target="_blank" rel="noopener">Facebook</a> ·
+        <a href="https://www.linkedin.com/company/annerbgraphisme" target="_blank" rel="noopener">LinkedIn</a>
+      </address>
+    </div>
+    <div class="map" id="carte">
+      <div class="map-ph">
+        <p>La carte est fournie par Google Maps, qui peut déposer des cookies.</p>
+        <button type="button" class="btn btn-primary show-map">Afficher la carte</button>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© Anne RB 2026 · Anne Roy Bouchard · SIRET 841 090 129 000 47</span>
+      <nav aria-label="Informations légales">
+        <a href="#doc-mentions">Mentions légales</a>
+        <a href="#doc-cgv">CGV</a>
+        <a href="#doc-cgu">CGU</a>
+        <a href="#doc-cookies">Cookies</a>
+        <a href="#doc-donnees">Données personnelles</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<dialog class="legal-doc" id="doc-cgv" aria-labelledby="t-cgv">
+  <div class="doc-head"><h2 id="t-cgv">Conditions générales de vente</h2><button type="button" class="doc-close">Fermer</button></div>
+  <div class="doc-body">
+    <p class="doc-date">Mis à jour le 02/04/2026</p>
+    <div class="doc-summary">
+      <h3>En résumé</h3>
+      <ul>
+        <li>Acompte pour tout devis de plus de 50 €, avant le début de la prestation.</li>
+        <li>Solde à réception de facture. Retard : 5 € par mois.</li>
+        <li>Révisions limitées ; supplément facturé au-delà.</li>
+        <li>Droits cédés après paiement ; présentation possible dans le portfolio.</li>
+        <li>Annulation : l'acompte reste acquis.</li>
+        <li>Validation étape par étape obligatoire.</li>
+        <li>Pas de responsabilité sur l'impression ou l'usage par un tiers.</li>
+        <li>Délais indicatifs ; un retard du client peut les décaler.</li>
+        <li>Données personnelles utilisées uniquement pour la prestation.</li>
+      </ul>
+    </div>
+    <p>Entreprise individuelle, graphiste<br>Anne Roy Bouchard, Anne RB Graphisme<br>E-mail : annerbgraphisme@gmail.com<br>SIRET : 841 090 129 000 47</p>
+    <h3>1. Objet</h3>
+    <p>Ces conditions générales de vente (CGV) régissent les prestations de graphisme proposées par Anne RB Graphisme pour tout projet commandé via devis ou contact direct.</p>
+    <h3>2. Commande et devis</h3>
+    <ul><li>Toute commande est acceptée après signature du devis.</li><li>Le devis précise la nature de la prestation, le nombre de propositions et de révisions incluses, ainsi que le prix.</li></ul>
+    <h3>3. Prix et paiement</h3>
+    <ul>
+      <li>Les prix sont exprimés en euros. TVA non applicable, article 293 B du CGI.</li>
+      <li>Pour tout devis supérieur à 50 €, un acompte est demandé avant le début de la prestation.</li>
+      <li>Le solde est payable dès réception de la facture, par virement bancaire ou via Wero.</li>
+      <li>En cas de retard, des pénalités de 5 € par mois seront appliquées automatiquement.</li>
+      <li>Paiement en plusieurs fois possible pour les forfaits ou facilités de paiement, à convenir avant le projet.</li>
+    </ul>
+    <h3>4. Révisions et modifications</h3>
+    <ul><li>Le devis inclut un nombre défini de propositions et de révisions.</li><li>Toute demande supplémentaire fera l'objet d'une facturation additionnelle.</li><li>Il est conseillé de discuter des besoins spécifiques avant signature du devis.</li></ul>
+    <h3>5. Propriété intellectuelle</h3>
+    <ul><li>Les créations restent la propriété d'Anne RB Graphisme jusqu'au paiement complet.</li><li>Les droits d'utilisation sont cédés uniquement pour l'usage spécifié dans le devis.</li><li>Les créations peuvent être présentées dans le portfolio de la graphiste, sauf indication contraire du client.</li></ul>
+    <h3>6. Annulation et report</h3>
+    <ul><li>En cas d'annulation après le début de la prestation, l'acompte reste acquis.</li><li>Le travail déjà réalisé pourra être facturé proportionnellement à l'avancement.</li><li>Tout report doit être convenu et confirmé par écrit.</li></ul>
+    <h3>7. Validation</h3>
+    <ul><li>Chaque étape du projet doit être validée par le client avant de passer à l'étape suivante.</li><li>Une validation ou des modifications tardives peuvent impacter les délais.</li></ul>
+    <h3>8. Responsabilité</h3>
+    <ul><li>Anne RB Graphisme s'engage à fournir des créations conformes au devis.</li><li>La graphiste ne peut être tenue responsable des conséquences liées à l'impression ou à l'utilisation par un tiers.</li><li>Le client est responsable de fournir des informations correctes et complètes.</li></ul>
+    <h3>9. Délais</h3>
+    <ul><li>Les délais indiqués le sont à titre indicatif.</li><li>Tout retard causé par le client peut entraîner un décalage de livraison.</li></ul>
+    <h3>10. Données personnelles</h3>
+    <ul><li>Les informations collectées sont utilisées uniquement pour la prestation et ne sont pas transmises à des tiers, conformément au RGPD.</li><li>Droit d'accès, de rectification et de suppression : annerbgraphisme@gmail.com.</li></ul>
+    <h3>11. Litiges</h3>
+    <ul><li>Les présentes CGV sont soumises au droit français.</li><li>Une solution amiable sera recherchée en cas de litige avant toute action judiciaire.</li></ul>
+  </div>
+</dialog>
+
+<dialog class="legal-doc" id="doc-cgu" aria-labelledby="t-cgu">
+  <div class="doc-head"><h2 id="t-cgu">Conditions générales d'utilisation</h2><button type="button" class="doc-close">Fermer</button></div>
+  <div class="doc-body">
+    <p class="doc-date">Mis à jour le 02/04/2026</p>
+    <h3>Article 1 – Objet</h3><p>Les présentes CGU ont pour objet de définir les modalités d'utilisation du site édité par Anne RB Graphisme.</p>
+    <h3>Article 2 – Accès au site</h3><p>Le site est accessible gratuitement à tout utilisateur disposant d'un accès à internet.</p>
+    <h3>Article 3 – Propriété intellectuelle</h3><p>Les contenus (textes, images, créations graphiques) sont la propriété exclusive d'Anne RB Graphisme, sauf mention contraire. Toute reproduction est interdite sans autorisation préalable.</p>
+    <h3>Article 4 – Responsabilité</h3><p>L'éditeur ne saurait être tenu responsable des erreurs, omissions ou indisponibilités du site.</p>
+    <h3>Article 5 – Données personnelles</h3><p>Les données collectées via le site sont traitées conformément à la <a href="#doc-donnees">politique de données personnelles</a>.</p>
+    <h3>Article 6 – Droit applicable</h3><p>Les présentes CGU sont soumises au droit français.</p>
+  </div>
+</dialog>
+
+<dialog class="legal-doc" id="doc-cookies" aria-labelledby="t-cookies">
+  <div class="doc-head"><h2 id="t-cookies">Politique de cookies</h2><button type="button" class="doc-close">Fermer</button></div>
+  <div class="doc-body">
+    <p class="doc-date">Mis à jour le 29/10/2026</p>
+    <h3>1. Qu'est-ce qu'un cookie ?</h3><p>Un cookie est un fichier stocké sur votre appareil lors de la navigation.</p>
+    <h3>2. Cookies utilisés sur ce site</h3><p>Ce site ne dépose aucun cookie de mesure d'audience ni de publicité. Aucun bandeau de consentement n'est donc nécessaire.</p>
+    <h3>3. Services tiers</h3><p>Certains services externes ne se chargent que si vous les demandez : le calendrier de réservation Calendly (bouton « Voir les créneaux ici ») et la carte Google Maps (bouton « Afficher la carte »). Ces services peuvent alors déposer leurs propres cookies, selon leur politique. Les polices de caractères sont chargées depuis Google Fonts, et les liens vers Calendly, Instagram, Facebook et LinkedIn ouvrent ces plateformes, qui appliquent leur propre politique.</p>
+    <h3>4. Contact</h3><p>Pour toute question : annerbgraphisme@gmail.com</p>
+  </div>
+</dialog>
+
+<dialog class="legal-doc" id="doc-donnees" aria-labelledby="t-donnees">
+  <div class="doc-head"><h2 id="t-donnees">Données personnelles</h2><button type="button" class="doc-close">Fermer</button></div>
+  <div class="doc-body">
+    <p class="doc-date">Mis à jour le 02/04/2026</p>
+    <p>Les informations que vous transmettez (par e-mail, téléphone ou lors d'une réservation) sont utilisées uniquement pour la prestation et ne sont pas transmises à des tiers, conformément au RGPD.</p>
+    <p>Vous disposez d'un droit d'accès, de rectification et de suppression de vos données : écrivez à annerbgraphisme@gmail.com.</p>
+  </div>
+</dialog>
+
+<dialog class="legal-doc" id="doc-mentions" aria-labelledby="t-mentions">
+  <div class="doc-head"><h2 id="t-mentions">Mentions légales</h2><button type="button" class="doc-close">Fermer</button></div>
+  <div class="doc-body">
+    <h3>Éditrice du site</h3>
+    <p>Anne Roy Bouchard, entreprise individuelle (Anne RB Graphisme)<br>SIRET : 841 090 129 000 47<br>Mousterlin, 29170 Fouesnant<br>E-mail : annerbgraphisme@gmail.com<br>Téléphone : 06 59 72 76 68</p>
+    <h3>Directrice de la publication</h3>
+    <p>Anne Roy Bouchard</p>
+    <h3>Hébergement</h3>
+    <p class="todo">À compléter : nom, adresse et téléphone de l'hébergeur choisi.</p>
+    <h3>Propriété intellectuelle</h3>
+    <p>Tous les visuels de ce site sont créés par Anne RB et protégés par le droit d'auteur. Toute reproduction est interdite sans autorisation préalable.</p>
+  </div>
+</dialog>
+
+
+<dialog class="lightbox" aria-label="Agrandissement">
+  <button type="button" class="close">Fermer</button>
+  <img alt="">
+  <p></p>
+</dialog>
+
+<script>
+// mobile menu
+const nav=document.querySelector('.nav'),tog=document.querySelector('.menu-toggle');
+tog.addEventListener('click',()=>{const o=nav.classList.toggle('open');tog.setAttribute('aria-expanded',o)});
+document.querySelectorAll('#menu a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');tog.setAttribute('aria-expanded',false)}));
+
+// pricing tiers
+document.querySelectorAll('.seg button').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('.seg button').forEach(x=>x.setAttribute('aria-pressed',x===b));
+  document.querySelectorAll('.price[data-pro]').forEach(p=>p.querySelector('span').textContent=p.dataset[b.dataset.tier]);
+}));
+
+// gallery: filters + "voir plus" paging (hidden tiles are never downloaded: images are lazy)
+const PAGE=16,tiles=[...document.querySelectorAll('.tile')],count=document.querySelector('.count'),more=document.querySelector('.more');
+let cur='all',shown=PAGE;
+function render(){
+  const match=tiles.filter(t=>cur==='all'||t.dataset.cat===cur);
+  tiles.forEach(t=>t.hidden=true);match.slice(0,shown).forEach(t=>t.hidden=false);
+  count.textContent=match.length+' réalisation'+(match.length>1?'s':'');
+  more.parentElement.hidden=shown>=match.length;
+  more.textContent='Voir plus de réalisations ('+(match.length-Math.min(shown,match.length))+')';
+}
+document.querySelectorAll('.filters button').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('.filters button').forEach(x=>x.setAttribute('aria-pressed',x===b));cur=b.dataset.f;shown=PAGE;render();
+}));
+more.addEventListener('click',()=>{shown+=PAGE;render()});
+render();
+
+// lightbox: loads the full-size image only when opened
+const dlg=document.querySelector('.lightbox'),big=dlg.querySelector('img');
+function openLight(el,caption){
+  const img=el.querySelector('img');big.src=img.src;big.alt=img.alt;
+  if(el.dataset.full){const f=new Image();f.onload=()=>{if(big.alt===img.alt)big.src=f.src};f.src=el.dataset.full}
+  dlg.querySelector('p').textContent=caption;dlg.showModal();
+}
+tiles.forEach(t=>{
+  t.addEventListener('click',()=>openLight(t,t.querySelector('figcaption').textContent));
+  t.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();t.click()}});
+});
+document.querySelectorAll('.boards button').forEach(b=>b.addEventListener('click',()=>openLight(b,b.querySelector('span').textContent)));
+dlg.querySelector('.close').addEventListener('click',()=>dlg.close());
+dlg.addEventListener('click',e=>{if(e.target===dlg)dlg.close()});
+
+// Calendly: the calendar loads only when asked (no third-party cookies before)
+document.querySelectorAll('.show-cal').forEach(b=>b.addEventListener('click',()=>{
+  const slot=document.getElementById(b.dataset.target);
+  if(!slot.firstChild){const f=document.createElement('iframe');
+    f.src=b.dataset.cal+'?embed_type=Inline&hide_gdpr_banner=1&embed_domain='+encodeURIComponent(location.hostname||'localhost');
+    f.title='Calendrier de réservation';f.loading='lazy';slot.appendChild(f)}
+  slot.hidden=false;b.remove();slot.scrollIntoView({behavior:'smooth',block:'start'});
+}));
+
+// Google map: loads only when asked
+document.querySelector('.show-map').addEventListener('click',()=>{
+  document.querySelector('.map').innerHTML='<iframe title="Carte : Mousterlin, Fouesnant" src="https://www.google.com/maps?q=Mousterlin,+29170+Fouesnant&z=14&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+});
+
+// legal documents: open from any #doc-… link, and on page load if the URL points to one
+function openDoc(id){const d=document.getElementById(id);if(!d||d.tagName!=='DIALOG')return false;document.querySelectorAll('dialog.legal-doc[open]').forEach(x=>x.close());d.showModal();d.querySelector('.doc-body').scrollTop=0;return true}
+document.addEventListener('click',e=>{const a=e.target.closest('a[href^="#doc-"]');if(a&&openDoc(a.getAttribute('href').slice(1))){e.preventDefault();history.replaceState(null,'',a.getAttribute('href'))}});
+document.querySelectorAll('dialog.legal-doc').forEach(d=>{
+  d.querySelector('.doc-close').addEventListener('click',()=>d.close());
+  d.addEventListener('click',e=>{if(e.target===d)d.close()});
+  d.addEventListener('close',()=>{if(location.hash==='#'+d.id)history.replaceState(null,'',location.pathname+location.search)});
+});
+if(location.hash.startsWith('#doc-'))openDoc(location.hash.slice(1));
+</script>
+</body>
+</html>
